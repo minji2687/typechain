@@ -1,0 +1,12 @@
+{
+  "include": ["src"], //어떤 파일을 포함할지 나타내는 옵션
+  "compilerOptions": {
+    "outDir": "build", //타입스크립트가 컴파일한 자바스크립트 파일이 생성될 디렉터리
+    "target": "ES5", //어떤 버전의 자바스크립트로 컴파일할지 나타냄
+    "lib": ["ES6", "DOM"], // 자바스크립트가 어떤환경에서 동작할지 나타냄, DOM은 브라우저 환경을 위한것
+    // lib 설정으로 인해 타입스크립트는 이것을 기반으로 우리에게 자동완성 기능을 지원해줄 수 있다.
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "CommonJS"
+  }
+}
